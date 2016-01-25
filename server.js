@@ -1,8 +1,11 @@
 'use strict';
 
 var express = require('express');
+var path = require('path');
 var app = express();
 var response = {unix: null, natural: null};
+
+//app.use(express.static(__dirname + '/public'));
 
 app.get('/:query', function(req, res) {
 	var query = new Date(req.params.query);
@@ -21,9 +24,8 @@ app.get('/:query', function(req, res) {
 });
 
 app.get('/', function(req, res) {
-	var index = 'Hello world!';
-	res.writeHead(200, { 'Content-Type': 'application/json'});
-	res.end(index);
+	//var index = 'Hello world!';
+	res.sendFile(path.join(__dirname + '/public/index.html'));
 });
 
 app.listen(8080);
