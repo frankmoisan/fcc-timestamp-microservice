@@ -1,4 +1,4 @@
-API PROJECTC: Timestamp Microservice
+API PROJECT: Timestamp Microservice
 
 Pass a string as a parameter, and the API will check to see if it is a date.
 
