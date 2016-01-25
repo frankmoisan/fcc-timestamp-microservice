@@ -24,8 +24,7 @@ app.get('/:query', function(req, res) {
 });
 
 app.get('/', function(req, res) {
-	//var index = 'Hello world!';
 	res.sendFile(path.join(__dirname + '/public/index.html'));
 });
 
-app.listen(8080);
+app.listen(process.env.PORT || 8080 || 5000);
