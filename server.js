@@ -9,12 +9,8 @@ app.get('/:query', function(req, res) {
 	
 	if (Object.prototype.toString.call(query) === '[object Date]') {
 		if (!isNaN(query.getTime())) {
-			//var year = query.getFullYear();
-			//var month = query.getMonth();
-			//var day = query.getDate();
 			var months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
-			//var naturalDate = months[month] + ' ' + day + ', ' + year;
-			
+
 			response.unix = query.getTime();
 			response.natural = months[query.getMonth()] + ' ' + query.getDate() + ', ' + query.getFullYear();
 		}
