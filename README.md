@@ -8,8 +8,8 @@ The API will then return a JSON object with both the Unix timestamp and the natu
 
 Example usage:
 
-https://fcc-timestamp-microservice-frankmoisan.c9users.io/January%2025,%202016  
-https://fcc-timestamp-microservice-frankmoisan.c9users.io/1453680000000
+https://fcc-timestamp-ms-frankmoisan.herokuapp.com/January%2025,%202016  
+https://fcc-timestamp-ms-frankmoisan.herokuapp.com/1453680000000
 
 Example output:
 
